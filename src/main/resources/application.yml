@@ -23,6 +23,8 @@ spring:
       validationQuery: SELECT 1 FROM DUAL
 mybatis:
   mapper-locations: classpath:mapping/*Mapper.xml
-  type-aliases-package: com.example.entity
+  type-aliases-package: com.ccz.xingtian.model
+  configuration:
+      map-underscore-to-camel-case: true
 server:
   port: 8082
